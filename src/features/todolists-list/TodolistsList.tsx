@@ -27,8 +27,9 @@ export const TodolistsList = () => {
 		if (!isLoggedIn) {
 			return;
 		}
+		console.log(isLoggedIn)
 		fetchTodolists({})
-	}, [])
+	}, [isLoggedIn])
 
 
 	const addTodolistCallback = (title: string) => {
